@@ -1,0 +1,176 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    overflow-y: hidden;
+    display: flex;
+}
+
+body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+.sidebar {
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 24rem;
+    height: 100vh;
+    padding: 0 1.7rem;
+    overflow: hidden;
+    background: #212121;
+    transition: all 0.5s linear;
+}
+
+.logo {
+    height: 8rem;
+    padding: 1.6rem;
+}
+
+.menu {
+    height: 80%;
+    position: relative;
+    list-style: none;
+    padding: 0;
+}
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+}
+.menu a {
+    padding: 1rem;
+    text-decoration: none;
+    border-radius: .8rem;
+    transition: all 0.5s linear;
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    font-size: 1.6rem;
+    color: #fff;
+}
+
+.menu a:hover,
+.active {
+    background: #f1f1f1;
+    color: #000 !important;
+}
+
+.menu a.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+/*body*/
+
+.main-content {
+    position: relative;
+    width: 100%;
+    padding: 1.4rem;
+    background: #ebe9e9;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    padding: 2rem;
+    border-radius: .8rem;
+}
+
+.header-wrapper .user-info {
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.header-wrapper .user-info .search {
+    background: #ebe9e9;
+    padding: 1rem;
+    border-radius: .8rem;
+}
+
+.header-wrapper .user-info .search input {
+    background: none;
+    border: none;
+    outline: none;
+    padding: .3rem;
+}
+
+.header-wrapper img {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+}
+
+.cards-container {
+    background: #fff;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: .8rem;
+}
+
+.card-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.6rem;
+}
+
+.card {
+    background: #90EE90FF;
+    padding: 1.4rem;
+    border-radius: .8rem;
+    width: 28rem;
+    height: 15rem;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.card-header .title {
+    font-size: 1.4rem;
+}
+
+.card-header .details {
+    font-size: 2.4rem;
+    font-weight: 600;
+}
+
+.icon {
+    color: #fff;
+    padding: 1.6rem;
+    height: 6rem;
+    width: 6rem;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 2.4rem;
+    background: #008000FF;
+}

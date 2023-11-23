@@ -1,0 +1,260 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+body * {
+    font-family: 'Poppins', sans-serif;
+}
+
+form .tabs {
+    margin: 2rem;
+    display: flex;
+}
+
+form .screens input, select {
+    padding: 1.2rem;
+}
+
+form .tabs button {
+    padding: 1.2rem 2.4rem;
+    font-size: 1.4rem;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    position: relative;
+}
+
+form .tabs button:hover {
+    background: #fff;
+    border-bottom: 2px solid #000;
+}
+
+form .tabs button.active {
+    background: #fff;
+    border-bottom: 2px solid #000;
+}
+
+form .screens>.screen {
+    animation: up 1s;
+}
+
+@keyframes up {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+form .screens {
+    display: flex;
+}
+
+
+form .screens .checkout, .shipping{
+    padding: 0 2rem;
+    flex: .6;
+    height: 100vh;
+}
+
+
+form .screens .shipping .data_shipping {
+    display: flex;
+    flex-direction: column;
+}
+
+
+form .screens .cart {
+    background: #ccc;
+    flex: .4;
+    max-height: 100%    ;
+}
+
+form .screens .checkout .payment_method, .shipping .data_shipping {
+    padding: 3.2rem;
+    border: 1px solid #BBC1C1;
+    margin: 10px 0;
+}
+
+form .screens .checkout .payment_method > div {
+    display: flex;
+    gap: .4rem;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+form .screens .checkout .payment_method > div + div {
+    gap: 20rem;
+    margin-top: 2rem;
+}
+
+form .screens .checkout .payment_method > div input[type="radio"] + label {
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+form .screens .checkout .payment_method input[type="radio"] {
+    appearance: none;
+
+    border: 1px solid #BBC1C1;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: 50%;
+    background: none;
+}
+
+form .screens .checkout .payment_method input[type="radio"]:checked {
+    background-image: radial-gradient(white 35%, #000 40%);
+}
+
+form .screens .checkout .payment_method .data .credit_card, .card_number {
+    display: flex;
+    flex-direction: column;
+}
+
+form .screens .checkout .payment_method .data .credit_card .data_credit_card {
+    display: flex;
+    gap: 2rem;
+}
+
+form .screens .checkout .payment_method .data .credit_card .data_credit_card .expiration_date, .security_code {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+}
+
+form .screens .checkout .payment_method .checkbox-wrapper {
+    display: flex;
+    align-items: center;
+    gap: .6rem;
+    margin-top: 1.6rem;
+}
+
+form .screens .checkout .payment_method input[type="checkbox"] {
+    appearance: none;
+    flex-shrink: 0;
+    border: 1px solid #BBC1C1;
+    height: 1.8rem;
+    width: 1.8rem;
+    border-radius: .4rem;
+    background: none;
+}
+
+form .screens .checkout .payment_method input[type="checkbox"]:checked {
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+form .screens .checkout .payment_method input[type="checkbox"]:checked::before {
+    content: "\f00c";
+    font-family: "Font Awesome 6 Free";
+    font-weight: bold;
+    background: black;
+    color: #fff;
+    font-size: 1.6rem;
+}
+
+form .screens button {
+    padding: 1.2rem 3.2rem;
+    cursor: pointer;
+    font-weight: 600;
+    text-transform: uppercase;
+    border: none;
+    outline: none;
+}
+
+form .screens button:nth-child(n + 1) {
+    border: 1px solid #000;
+    background: none;
+}
+
+form .screens button:last-child {
+    background: #000;
+    color: #fff;
+    margin-left: 1.6rem;
+}
+
+
+/* CARD */
+
+
+.card {
+    position: relative;
+    background-image: url("./../images/bg.png");
+    background-size: cover;
+    padding: 25px;
+    border-radius: 28px;
+    max-width: 380px;
+    width: 100%;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.header,
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header {
+    gap: 6rem;
+}
+
+.logo img {
+    width: 48px;
+    margin-right: 10px;
+}
+
+h5 {
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.header .chip {
+    width: 60px;
+}
+
+h6 {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+}
+
+h5.number {
+    margin-top: 4px;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+h5.name {
+    margin-top: 20px;
+}
+
+.card .card-details {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}

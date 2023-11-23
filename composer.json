@@ -1,0 +1,21 @@
+{
+  "name": "felipe-douglas/loja",
+  "minimum-stability": "stable",
+  "autoload": {
+    "psr-4": {
+      "App\\": "app/"
+    },
+    "files": [
+      "settings/settings.php"
+    ]
+  },
+  "require": {
+    "coffeecode/uploader": "^2.0",
+    "coffeecode/datalayer": "^2.0",
+    "coffeecode/paginator": "^2.0",
+    "coffeecode/router": "^2.0",
+    "twbs/bootstrap": "^5.3",
+    "league/plates": "^3.5",
+    "fortawesome/font-awesome": "^6.4"
+  }
+}
